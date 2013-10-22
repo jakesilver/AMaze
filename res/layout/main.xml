@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" >
+
+        <RadioButton
+            android:id="@+id/primButton"
+            android:layout_width="251dp"
+            android:layout_height="wrap_content"
+            android:text="Prim&apos;s Algorithm" />
+
+        <RadioButton
+            android:id="@+id/kruskalButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radio1"
+            android:checked="true"
+            android:text="Kruskal&apos;s Algorithm" />
+
+        <RadioButton
+            android:id="@+id/falstadButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radio0"
+            android:text="Falstad&apos;s Algorithm" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <RadioButton
+            android:id="@+id/curiousGamblerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="Curious Gambler" />
+
+        <RadioButton
+            android:id="@+id/wizardButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:text="Wizard" />
+
+        <RadioButton
+            android:id="@+id/gamblerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Gambler" />
+
+        <RadioButton
+            android:id="@+id/manualDriverButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="Manual Driver" />
+
+        <RadioButton
+            android:id="@+id/wallFollowerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/radioButton1"
+            android:layout_alignParentRight="true"
+            android:text="Wall Follower" />
+    </RadioGroup>
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/radioGroup1"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/radioGroup2"
+        android:text="Reset" />
+
+    <SeekBar
+        android:id="@+id/Difficulty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/resetButton"
+        android:layout_alignParentLeft="true"
+        android:max="9" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup2"
+        android:layout_centerHorizontal="true"
+        android:text="Difficulty"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/generateButton"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/resetButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/radioGroup2"
+        android:text="Generate and Play" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView1"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical" >
+
+        <RadioButton
+            android:id="@+id/mazeOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/mazeThree"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="Maze One" />
+
+        <RadioButton
+            android:id="@+id/mazeTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/mazeThree"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/mazeOne"
+            android:text="Maze Two" />
+
+        <RadioButton
+            android:id="@+id/mazeThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/mazeTwo"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/mazeTwo"
+            android:text="Maze Three" />
+
+        <RadioButton
+            android:id="@+id/mazeFive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/radioGroup2"
+            android:layout_alignParentRight="true"
+            android:text="Maze Four" />
+
+        <RadioButton
+            android:id="@+id/mazeFour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Maze Five" />
+
+    </RadioGroup>
+
+</RelativeLayout>

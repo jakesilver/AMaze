@@ -1,0 +1,82 @@
+CRC Cards for Project 5
+Benjamin Weaver and Jake Silver
+
+Class: State Title
+
+		This class implements the Activity for the Title screen of our android application. Supplies the user with buttons for 
+	 	maze type selection, difficulty, map view, generate from file/save to file, and driver/manual solver choice. Moves to StateGenerating when
+	 	the generate button is pressed.
+	 	
+	 Methods:
+	 
+	 	OnCreate--Called when the activity is first created.
+		 		  initializes buttons and listeners for Title screen.
+		 		  Sets default method to Falstad's algorithm and Manual solver.
+	 	
+	 	SetDefaults--Method to change all user selections on Title screen back to their defaults. Used when the reset button is pressed.
+	 	
+	 Collaborators:
+	 
+	 	None yet(until we add the port the maze stuff)
+ 	
+ 	
+Class: State Generating
+
+		Class which implements the StateGenerating Activity from our Android application.
+ 		Uses a thread to simulate the progress bar to supply a delay. If the back button is pressed on the emulator,
+ 		returns to StateTitle
+
+	Methods:
+	
+		OnCreate--Sets layout for second screen. Uses thread for simulating progress bar.
+		
+		OnDestroy--Used for termination of simulation thread
+		
+		Run--Used for running of simulation thread
+		
+	Collaborators:
+	
+		None yet
+
+
+
+
+Class: State Play
+
+		This class implements the StatePlay screen for our android application.
+	 	Responds to user input on the d-pad by toasting and outputting using log.v
+	 	has options to toggle map/solution visibility
+	 	pressing the back button returns to the StateTitle screen
+	 	
+	 Methods:
+	 
+	 	OnCreate--Called when the activity is first created. Sets appropriate buttons and listeners
+	 	
+	 	OnKeyDown--Overrides the d-pad and arrow keys to provide toasts/log.v output to the user. Will eventually be used to move
+     			   manually through the maze.
+     			   
+     Collaborators:
+     	
+     	None yet
+     	
+     	
+Class: State Finish
+
+		This class implements the Activity for the Finish screen in our android application.
+ 		gives user option to restart the program. Displays battery level and moves used.
+ 		pressing the back button also returns to StateTitle
+ 		
+ 	Methods:
+ 	
+ 		OnCreate--Called when the activity is first created. Sets up appropriate buttons and listeners
+ 		
+ 	Collaborators:
+ 	
+ 		None yet
+ 		
+ 		
+ 		
+ 		
+ 		
+ 		
+ 		

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World!</string>
+    <string name="app_name">AMaze</string>
+    
+    <string-array name="Robots">
+        <item name="Wall Follower"/>
+    	<item name="Curious Gambler"/>
+    	<item name="Gambler"/>
+    	<item name="Manual Driver"/>
+    	<item name="Wizard"/>
+    </string-array>
+    
+
+</resources>
