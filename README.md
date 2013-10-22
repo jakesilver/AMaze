@@ -11,6 +11,8 @@ Things that we added:
 
 -Adding a new maze algorithm to Falstad's maze program in a test-driven design manner
 
+-Added user interface using JOptionPane with Buttons allowing user to manipulate maze before creating and move throughout the maze.
+
 -Establish a robot platform to operate on the maze
 
 -Add different algorithms to drive a robot out of the maze, with battery life and moves made
