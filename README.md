@@ -4,7 +4,7 @@ AMaze
 Maze Android Application converted from Java Applet from Paul Falstad (with permission)
 http://www.falstad.com/maze/
 
-Project that I worked on with Benjamin Weaver (github.com/bweavgolfanatic)  during the Fall of 2012 for Software Development class at the College of William and Mary.
+Project that I worked on with Benjamin Weaver (http://www.github.com/bweavgolfanatic)  during the Fall of 2012 for Software Development class at the College of William and Mary.
 
 We were given existing code for a Maze Java Applet and throughout the semester added on to it.
 
